@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* index.css */
+
+.category-card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.image {
+  max-width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  z-index: 10;
+}
+
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  );
+  z-index: 1; /
+}
