@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  document
+    .getElementById("mobile-menu-btn")
+    .addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    }); 
+
   const mealDetail = document.getElementById("mealDetail");
   const params = new URLSearchParams(window.location.search);
   const mealId = params.get("idMeal");

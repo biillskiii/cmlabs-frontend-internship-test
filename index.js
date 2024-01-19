@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  document
+    .getElementById("mobile-menu-btn")
+    .addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
   const categorySection = document.getElementById("categorySection");
 
   fetch("https://www.themealdb.com/api/json/v1/1/categories.php")

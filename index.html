@@ -12,21 +12,49 @@
     <title>Meal App</title>
   </head>
   <body>
-    <nav class="shadow-md">
+    <nav class="bg-white text-black shadow-md p-4">
       <div
-        class="container mx-auto px-32 py-5 flex justify-between items-center"
+        class="container mx-auto px-5 lg:px-32 flex justify-between items-center"
       >
-        <a href="/index.html" class="text-blue-900 font-bold text-2xl">mealapp</a>
-        <ul
-          class="flex justify-center items-center gap-x-10 font-medium text-sm"
-        >
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Foods</a></li>
-          <li><a href="#">Ingridients</a></li>
-          <li><a href="#">Local Culinary</a></li>
-        </ul>
+        <a href="/index.html" class="text-2xl font-bold">mealapp</a>
+
+        <div class="hidden md:flex space-x-6 font-medium">
+          <a href="#" class="cursor-pointer">Home</a>
+          <a href="#" class="cursor-pointer">Foods</a>
+          <a href="#" class="cursor-pointer">Ingridients</a>
+          <a href="#" class="cursor-pointer">Local Culinary</a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="text-black focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </nav>
+    <div
+      id="mobile-menu"
+      class="w-full md:hidden font-medium hidden bg-white shadow-md"
+    >
+      <a href="#" class="block py-2 px-9 cursor-pointer">Home</a>
+      <a href="#" class="block py-2 px-9 cursor-pointer">Foods</a>
+      <a href="#" class="block py-2 px-9 cursor-pointer">Ingridients</a>
+      <a href="#" class="block py-2 px-9 cursor-pointer">Local Culinary</a>
+    </div>
+
     <!-- Hero Section -->
     <section>
       <div
@@ -38,7 +66,7 @@
       </div>
       <div class="text-center">
         <p class="my-5 font-bold">mealapp API website</p>
-        <h1 class="text-5xl font-bold">See All The Delicious Foods</h1>
+        <h1 class="text-4xl lg:text-5xl font-bold">See All The Delicious Foods</h1>
       </div>
     </section>
     <!-- Category Section  -->
